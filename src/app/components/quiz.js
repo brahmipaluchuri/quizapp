@@ -95,10 +95,10 @@ const QuizScreen=()=>{
           <p className={`timer ${timerclass}`}><b>Timer :- </b><span className='counttimer'>{`${minutes} min : ${seconds}seconds`}</span></p>
          <h3>{Questions[data].id}.{Questions[data].prompt}</h3>      
          <div className='quizoptions'>
-           <button onClick={()=>setChooseOptions("A")}>{Questions[data].optionA}</button>
-           <button onClick={()=>setChooseOptions("B")}>{Questions[data].optionB}</button>
-           <button onClick={()=>setChooseOptions("C")}>{Questions[data].optionC}</button>
-           <button onClick={()=>setChooseOptions("D")}>{Questions[data].optionD}</button>
+           <button className={data === 'A' ? "active" : ""} onClick={()=>setChooseOptions("A")}>{Questions[data].optionA}</button>
+           <button className={data === 'B' ? "active" : ""} onClick={()=>setChooseOptions("B")}>{Questions[data].optionB}</button>
+           <button className={data === 'C' ? "active" : ""} onClick={()=>setChooseOptions("C")}>{Questions[data].optionC}</button>
+           <button className={data === 'D' ? "active" : ""} onClick={()=>setChooseOptions("D")}>{Questions[data].optionD}</button>
          </div>
          {data == Questions.length-1 ? (<span className='finsedQuiz'><button onClick={handFinshed}>Finished Quiz</button></span>) : (
           <span className='nextbutton'><button onClick={nextQuestion}>Next Question</button></span> 
