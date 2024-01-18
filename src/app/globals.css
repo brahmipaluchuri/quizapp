@@ -1,0 +1,384 @@
+.app{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 50vh;
+  background-color: skyblue;
+    
+  button{
+    width: 10vw;
+    height: 6vh;
+    cursor: pointer;
+  } 
+}
+.quizscreen{
+  display: flex;
+  flex-direction: column;
+  background-color: skyblue;
+  align-items: center;
+  width: 35vw;
+  height: 70vh;
+  border-radius: 1rem;
+
+    .timerclass{
+      color: red;
+    }
+
+    .timer{
+      display: flex;
+      position: absolute;
+      left: 50%;
+      top: 12%;
+      gap: .5rem;
+        
+      b{
+        font-size: 1rem;
+      }
+      .counttimer{
+        color: rgb(7, 124, 13);
+        font-weight: 600;
+      }
+     
+    }
+    h3{
+      padding-top: 1rem;
+      font-size: 1.5rem;
+    }
+
+  .quizoptions{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 15vw;
+
+    button{
+      height: 6vh;
+      font-size: 1rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      color: orangered;
+      font-weight: 600;
+    }
+  }
+  .nextbutton{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem; 
+      button{
+      height: 5vh;
+      width: 20vw;
+      border-radius: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      color: green;
+      font-weight: 600;
+     }
+  }
+
+  .finsedQuiz{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem; 
+      button{
+      height: 5vh;
+      width: 20vw;
+      border-radius: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      color: green;
+      font-weight: 600;
+     }
+  }
+
+}
+
+.endscreen{
+  display: flex;
+  flex-direction: column;
+  background-color: skyblue;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 1rem;
+ align-items: center;
+
+  h3{
+    font-size: 1.2rem;
+    padding-bottom: 3rem;
+  }
+  h2{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+   button{
+    width: 20vw;
+    height: 6vh;
+    font-size: 1rem;
+    border-radius: 1rem;
+    color: indigo;
+    font-weight: 600;
+    cursor: pointer;
+   }
+}
+
+@media screen and (max-width : 500px) {
+  .app{
+
+    h3{
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 50vh;
+    background-color: skyblue;
+    border-radius: 1rem;
+      
+    button{
+      width: 20vw;
+      height: 6vh;
+      cursor: pointer;
+    } 
+  }
+  .quizscreen{
+    background-color: skyblue;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 1rem;
+  
+      .timerclass{
+        color: red;
+      }
+  
+      .timer{
+        display: flex;
+        position: absolute;
+        left: 45%;
+        top: 10%;
+        gap: .5rem;
+          
+        b{
+          font-size: 1rem;
+        }
+        .counttimer{
+          color: rgb(7, 124, 13);
+          font-weight: 600;
+        }
+       
+      }
+      h3{
+        padding-top: 1rem;
+        font-size: 1.5rem;
+      }
+  
+    .quizoptions{
+      width: 30vw;
+  
+      button{
+        height: 6vh;
+        font-size: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        color: orangered;
+        font-weight: 600;
+      }
+    }
+    .nextbutton{
+      padding-top: 2rem; 
+
+        button{
+        height: 8vh;
+        width: 35vw;
+        border-radius: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        color: green;
+        font-weight: 600;
+       }
+    }
+  
+    .finsedQuiz{
+    
+      padding-top: 2rem; 
+
+        button{
+        height: 8vh;
+        width: 35vw;
+        border-radius: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        color: green;
+        font-weight: 600;
+       }
+    }
+  
+  }
+  .endscreen{
+
+    background-color: skyblue;
+    width: 70vw;
+    height: 50vh;
+    border-radius: 1rem;
+ 
+  
+    h3{
+      font-size: 1.2rem;
+      padding-bottom: 3rem;
+    }
+    h2{
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
+    }
+     button{
+      width: 30vw;
+      height: 7vh;
+      font-size: 1rem;
+      border-radius: 1rem;
+      color: indigo;
+      font-weight: 600;
+      cursor: pointer;
+     }
+  }
+}
+
+@media screen and (max-width : 380px) {
+  .app{
+
+    h3{
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 50vh;
+    background-color: skyblue;
+    border-radius: 1rem;
+      
+    button{
+      width: 20vw;
+      height: 6vh;
+      cursor: pointer;
+    } 
+  }
+  .quizscreen{
+    background-color: skyblue;
+    width: 80vw;
+    height: 70vh;
+    border-radius: 1rem;
+  
+      .timerclass{
+        color: red;
+      }
+  
+      .timer{
+        display: flex;
+        position: absolute;
+        left: 28%;
+        top: 10%;
+        gap: .5rem;
+          
+        b{
+          font-size: 1rem;
+        }
+        .counttimer{
+          color: rgb(7, 124, 13);
+          font-weight: 600;
+        }
+       
+      }
+      h3{
+        padding-top: 2rem;
+        font-size: 1.5rem;
+      }
+  
+    .quizoptions{
+      width: 30vw;
+  
+      button{
+        height: 6vh;
+        font-size: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        color: orangered;
+        font-weight: 600;
+      }
+    }
+    .nextbutton{
+      padding-top: 2rem; 
+
+        button{
+        height: 8vh;
+        width: 35vw;
+        border-radius: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        color: green;
+        font-weight: 600;
+       }
+    }
+  
+    .finsedQuiz{
+    
+      padding-top: 2rem; 
+
+        button{
+        height: 8vh;
+        width: 35vw;
+        border-radius: 1rem;
+        font-size: 1rem;
+        cursor: pointer;
+        color: green;
+        font-weight: 600;
+       }
+    }
+  
+  }
+  .endscreen{
+
+    background-color: skyblue;
+    width: 70vw;
+    height: 50vh;
+    border-radius: 1rem;
+ 
+  
+    h3{
+      font-size: 1.2rem;
+      padding-bottom: 3rem;
+    }
+    h2{
+      font-size: 1.5rem;
+      padding-bottom: 2rem;
+    }
+     button{
+      width: 30vw;
+      height: 7vh;
+      font-size: 1rem;
+      border-radius: 1rem;
+      color: indigo;
+      font-weight: 600;
+      cursor: pointer;
+     }
+  }
+}
